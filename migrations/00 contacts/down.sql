@@ -1,0 +1,9 @@
+DROP TABLE contact_phones;
+DROP TABLE contact_emails;
+DROP TABLE contact_addresses;
+DROP TABLE shared_addressbooks;
+DROP TABLE email_addresses;
+DROP TABLE phone_numbers;
+DROP TABLE contacts;
+DROP TABLE organizations;
+DROP TABLE addressbooks;

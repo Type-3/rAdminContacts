@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c53138f-6c80-4944-9c67-9806f401258a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rAdmin-contacts.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/00 contacts/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/00 contacts/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/addressbook.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/addressbook_tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/info.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/contacts/tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/info.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/organizations/tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/factories/shared_addressbook.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/addressbook.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/addressbook_tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/info.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/contacts/tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/address.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/email.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/info.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/organizations/tag.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/phone.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/shared_addressbook.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="hkqiu9il" />
+  </component>
+  <component name="ProjectId" id="1kmibM3XmC95XV5IwVCraD8wksm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/factories/organizations" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/factories/organizations" />
+      <recent name="$PROJECT_DIR$/src/factories/contacts" />
+      <recent name="$PROJECT_DIR$/src/models/contacts" />
+      <recent name="$PROJECT_DIR$/src/factories" />
+      <recent name="$PROJECT_DIR$/src/models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/factories/organizations" />
+      <recent name="$PROJECT_DIR$/src/factories/contacts" />
+      <recent name="$PROJECT_DIR$/src/factories" />
+      <recent name="$PROJECT_DIR$/src/factories/contacts/info" />
+      <recent name="$PROJECT_DIR$/src/models/organizations" />
+    </key>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="/usr/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c53138f-6c80-4944-9c67-9806f401258a" name="Default Changelist" comment="" />
+      <created>1606312238567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606312238567</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="693" y="301" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606319355986">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="693" y="301" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.1920.1055@0.25.1920.1055" timestamp="1606319355986" />
+    <state x="644" y="278" width="631" height="548" key="find.popup" timestamp="1606380015758">
+      <screen x="0" y="25" width="1920" height="1055" />
+    </state>
+    <state x="644" y="278" width="631" height="548" key="find.popup/0.25.1920.1055@0.25.1920.1055" timestamp="1606380015758" />
+  </component>
+</project>

@@ -1,0 +1,17 @@
+[package]
+name = "radmin-contacts"
+version = "0.1.0"
+authors = ["Bytebuddha <pmg41494@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+clap = "*"
+fake = "*"
+rand = "*"
+serde = "*"
+rocket = "*"
+diesel = "*"
+validator = "*"
+vcard = "0.4.7"
+diesel_migrations = "*"
+radmin = { path = "../rAdmin" }
