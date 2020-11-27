@@ -12,7 +12,7 @@ pub struct ContactInfoFactory {
     pub last_name: Option<String>,
     pub middle_name: Option<String>,
     pub name_prefix: Option<String>,
-    pub name_suffix: Option<String>
+    pub name_suffix: Option<String>,
 }
 
 impl ContactInfoFactory {
@@ -23,7 +23,7 @@ impl ContactInfoFactory {
             last_name: None,
             middle_name: None,
             name_prefix: None,
-            name_suffix: None
+            name_suffix: None,
         }
     }
 

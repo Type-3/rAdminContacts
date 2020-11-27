@@ -12,7 +12,7 @@ pub struct AddressFactory {
     pub locality: Option<String>,
     pub region: Option<String>,
     pub code: Option<String>,
-    pub country: Option<String>
+    pub country: Option<String>,
 }
 
 impl AddressFactory {

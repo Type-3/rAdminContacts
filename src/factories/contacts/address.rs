@@ -13,8 +13,16 @@ pub struct ContactAddressFactory {
 }
 
 impl ContactAddressFactory {
-    pub fn new<S: Into<String>>(contact_id: Uuid, address_id: Uuid, address_type: S) -> ContactAddressFactory {
-        ContactAddressFactory { contact_id, address_id, address_type: address_type.into() }
+    pub fn new<S: Into<String>>(
+        contact_id: Uuid,
+        address_id: Uuid,
+        address_type: S,
+    ) -> ContactAddressFactory {
+        ContactAddressFactory {
+            contact_id,
+            address_id,
+            address_type: address_type.into(),
+        }
     }
 
     pub fn contact_id(mut self, s: Uuid) -> ContactAddressFactory {

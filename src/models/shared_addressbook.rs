@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::shared_addressbooks;
 
@@ -9,5 +9,5 @@ pub struct SharedAddressBook {
     pub id: Uuid,
     pub owner_id: Uuid,
     pub addressbook_id: Uuid,
-    pub account_id: Uuid
+    pub account_id: Uuid,
 }

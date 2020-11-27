@@ -159,7 +159,15 @@ table! {
 }
 
 allow_tables_to_appear_in_same_query!(
-    contacts, organizations, phone_numbers, email_addresses, physical_addresses,
-    contact_emails, contact_phones, contact_addresses, organization_phones, organization_emails,
+    contacts,
+    organizations,
+    phone_numbers,
+    email_addresses,
+    physical_addresses,
+    contact_emails,
+    contact_phones,
+    contact_addresses,
+    organization_phones,
+    organization_emails,
     organization_addresses
 );

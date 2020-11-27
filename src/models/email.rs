@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::email_addresses;
 
@@ -8,5 +8,5 @@ use crate::schema::email_addresses;
 pub struct Email {
     pub id: Uuid,
     pub account: String,
-    pub domain: String
+    pub domain: String,
 }

@@ -13,12 +13,10 @@ pub struct EmailFactory {
 }
 
 impl EmailFactory {
-
-
     pub fn new<S: Into<String>>(account: S, domain: S) -> EmailFactory {
         EmailFactory {
             account: account.into(),
-            domain: domain.into()
+            domain: domain.into(),
         }
     }
 

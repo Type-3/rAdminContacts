@@ -1,14 +1,20 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use super::ContactInfo as Contact;
 use crate::models::AddressBookTag as Tag;
 use crate::schema::contact_tags;
 
 #[derive(
-    Debug, PartialEq, Clone, Serialize,
-    Deserialize, Queryable, Identifiable,
-    AsChangeset, Associations
+    Debug,
+    PartialEq,
+    Clone,
+    Serialize,
+    Deserialize,
+    Queryable,
+    Identifiable,
+    AsChangeset,
+    Associations,
 )]
 #[belongs_to(Contact)]
 #[belongs_to(Tag)]
@@ -16,5 +22,5 @@ use crate::schema::contact_tags;
 pub struct ContactTag {
     pub id: Uuid,
     pub contact_id: Uuid,
-    pub tag_id: Uuid
+    pub tag_id: Uuid,
 }

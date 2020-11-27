@@ -13,8 +13,16 @@ pub struct OrganizationPhoneFactory {
 }
 
 impl OrganizationPhoneFactory {
-    pub fn new<S: Into<String>>(organization_id: Uuid, phone_id: Uuid, phone_type: S) -> OrganizationPhoneFactory {
-        OrganizationPhoneFactory { organization_id, phone_id, phone_type: phone_type.into() }
+    pub fn new<S: Into<String>>(
+        organization_id: Uuid,
+        phone_id: Uuid,
+        phone_type: S,
+    ) -> OrganizationPhoneFactory {
+        OrganizationPhoneFactory {
+            organization_id,
+            phone_id,
+            phone_type: phone_type.into(),
+        }
     }
 
     pub fn organization_id(mut self, s: Uuid) -> OrganizationPhoneFactory {

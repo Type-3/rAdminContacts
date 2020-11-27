@@ -1,7 +1,7 @@
-use radmin::uuid::Uuid;
 use diesel::RunQueryDsl;
 use radmin::diesel::PgConnection;
 use radmin::serde::{Deserialize, Serialize};
+use radmin::uuid::Uuid;
 
 use crate::models::SharedAddressBook;
 use crate::schema::shared_addressbooks;
@@ -15,10 +15,12 @@ pub struct SharedAddressBookFactory {
 }
 
 impl SharedAddressBookFactory {
-
-
     pub fn new(owner_id: Uuid, addressbook_id: Uuid, account_id: Uuid) -> SharedAddressBookFactory {
-        SharedAddressBookFactory { owner_id, addressbook_id, account_id }
+        SharedAddressBookFactory {
+            owner_id,
+            addressbook_id,
+            account_id,
+        }
     }
 
     pub fn insert(self, conn: &PgConnection) -> SharedAddressBook {

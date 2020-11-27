@@ -14,55 +14,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c53138f-6c80-4944-9c67-9806f401258a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rAdmin-contacts.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/00 contacts/down.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/00 contacts/up.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/addressbook.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/addressbook_tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/info.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/contacts/tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/info.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/organizations/tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factories/shared_addressbook.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/addressbook.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/addressbook_tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/info.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/contacts/tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/address.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/email.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/info.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/mod.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/organizations/tag.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/phone.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/shared_addressbook.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/00 contacts/up.sql" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/00 contacts/up.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/db.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/addressbook.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/addressbook.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/addressbook_tag.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/addressbook_tag.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/info.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/info.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/contacts/tag.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/contacts/tag.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/organizations/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/organizations/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/organizations/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/organizations/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/organizations/info.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/organizations/info.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/organizations/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/organizations/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/organizations/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/organizations/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/factories/shared_addressbook.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/factories/shared_addressbook.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/addressbook.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/addressbook.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/addressbook_tag.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/addressbook_tag.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/info.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/info.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/contacts/tag.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/contacts/tag.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/address.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/address.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/email.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/email.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/info.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/info.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/organizations/tag.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/organizations/tag.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/phone.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/phone.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/shared_addressbook.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/shared_addressbook.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

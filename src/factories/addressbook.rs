@@ -1,9 +1,9 @@
-use fake::Fake;
-use radmin::uuid::Uuid;
 use diesel::RunQueryDsl;
 use fake::faker::name::en::Name;
+use fake::Fake;
 use radmin::diesel::PgConnection;
 use radmin::serde::{Deserialize, Serialize};
+use radmin::uuid::Uuid;
 
 use crate::models::AddressBook;
 use crate::schema::addressbooks;
@@ -16,12 +16,10 @@ pub struct AddressBookFactory {
 }
 
 impl AddressBookFactory {
-
-
     pub fn new(account_id: Uuid) -> AddressBookFactory {
         AddressBookFactory {
             account_id,
-            name: Name().fake()
+            name: Name().fake(),
         }
     }
 

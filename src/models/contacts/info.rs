@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::contacts;
 use radmin::chrono::{DateTime, Utc};
@@ -15,5 +15,5 @@ pub struct ContactInfo {
     pub name_prefix: Option<String>,
     pub name_suffix: Option<String>,
     pub created_at: DateTime<Utc>,
-    pub updated_at: DateTime<Utc>
+    pub updated_at: DateTime<Utc>,
 }

@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::organization_tags;
 
@@ -8,5 +8,5 @@ use crate::schema::organization_tags;
 pub struct OrganizationTag {
     pub id: Uuid,
     pub organization_id: Uuid,
-    pub tag_id: Uuid
+    pub tag_id: Uuid,
 }

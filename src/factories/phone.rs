@@ -13,12 +13,10 @@ pub struct PhoneFactory {
 }
 
 impl PhoneFactory {
-
-
     pub fn new<S: Into<String>>(phone: S) -> PhoneFactory {
         PhoneFactory {
             phone: phone.into(),
-            extension: None
+            extension: None,
         }
     }
 

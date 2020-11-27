@@ -1,7 +1,7 @@
-use radmin::uuid::Uuid;
 use diesel::RunQueryDsl;
 use radmin::diesel::PgConnection;
 use radmin::serde::{Deserialize, Serialize};
+use radmin::uuid::Uuid;
 
 use crate::models::contacts::ContactTag;
 use crate::schema::contact_tags;
@@ -14,13 +14,8 @@ pub struct ContactTagFactory {
 }
 
 impl ContactTagFactory {
-
-
     pub fn new(contact_id: Uuid, tag_id: Uuid) -> ContactTagFactory {
-        ContactTagFactory {
-            contact_id,
-            tag_id
-        }
+        ContactTagFactory { contact_id, tag_id }
     }
 
     pub fn insert(self, conn: &PgConnection) -> ContactTag {

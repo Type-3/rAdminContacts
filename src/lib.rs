@@ -7,13 +7,12 @@ extern crate diesel;
 extern crate diesel_migrations;
 
 pub mod db;
-pub mod schema;
-pub mod models;
 pub mod factories;
+pub mod models;
+pub mod schema;
 
 use radmin::crate_version;
 use radmin::modules::{DatabaseModule, ServerModule};
-
 
 #[derive(Default, Debug)]
 pub struct ContactsModule;

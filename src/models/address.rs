@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::physical_addresses;
 
@@ -13,5 +13,5 @@ pub struct Address {
     pub locality: Option<String>,
     pub region: Option<String>,
     pub code: Option<String>,
-    pub country: Option<String>
+    pub country: Option<String>,
 }

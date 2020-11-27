@@ -13,10 +13,9 @@ pub use self::email::OrganizationEmail;
 mod address;
 pub use self::address::OrganizationAddress;
 
-
-use radmin::ServerError;
-use diesel::{PgConnection, RunQueryDsl, QueryDsl, BelongingToDsl};
+use diesel::{BelongingToDsl, PgConnection, QueryDsl, RunQueryDsl};
 use radmin::uuid::Uuid;
+use radmin::ServerError;
 
 use crate::schema::organizations;
 
@@ -28,17 +27,13 @@ pub struct OrganizationRecord {
 }
 
 impl OrganizationRecord {
-
     pub fn from_id(id: Uuid, conn: &PgConnection) -> Result<OrganizationRecord, ServerError> {
-        let organization: OrganizationInfo = organizations::table.find(id)
-                .first(conn)?;
-        Ok(
-            OrganizationRecord {
-                emails: OrganizationEmail::belonging_to(&organization).load(conn)?,
-                phones: OrganizationPhone::belonging_to(&organization).load(conn)?,
-                addresses: OrganizationAddress::belonging_to(&organization).load(conn)?,
-                organization,
-            }
-        )
+        let organization: OrganizationInfo = organizations::table.find(id).first(conn)?;
+        Ok(OrganizationRecord {
+            emails: OrganizationEmail::belonging_to(&organization).load(conn)?,
+            phones: OrganizationPhone::belonging_to(&organization).load(conn)?,
+            addresses: OrganizationAddress::belonging_to(&organization).load(conn)?,
+            organization,
+        })
     }
 }

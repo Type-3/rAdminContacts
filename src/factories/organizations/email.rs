@@ -9,12 +9,20 @@ use radmin::uuid::Uuid;
 pub struct OrganizationEmailFactory {
     organization_id: Uuid,
     email_id: Uuid,
-    email_type: String
+    email_type: String,
 }
 
 impl OrganizationEmailFactory {
-    pub fn new<S: Into<String>>(organization_id: Uuid, email_id: Uuid, email_type: S) -> OrganizationEmailFactory {
-        OrganizationEmailFactory { organization_id, email_id, email_type: email_type.into() }
+    pub fn new<S: Into<String>>(
+        organization_id: Uuid,
+        email_id: Uuid,
+        email_type: S,
+    ) -> OrganizationEmailFactory {
+        OrganizationEmailFactory {
+            organization_id,
+            email_id,
+            email_type: email_type.into(),
+        }
     }
 
     pub fn organization_id(mut self, s: Uuid) -> OrganizationEmailFactory {

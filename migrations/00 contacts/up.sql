@@ -1,12 +1,12 @@
 CREATE TABLE addressbooks (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    account_id UUID NOT NULL REFERENCES id on accounts,
+    account_id UUID NOT NULL REFERENCES accounts(id),
     name VARCHAR NOT NULL
 );
 
 CREATE TABLE addressbook_tags (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    addressbook_id UUID NOT NULL REFERENCES id ON addressbooks,
+    addressbook_id UUID NOT NULL REFERENCES addressbooks(id),
     label VARCHAR NOT NULL
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE physical_addresses (
 
 CREATE TABLE contacts (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    addressbook_id UUID NOT NULL REFERENCES id ON addressbooks,
+    addressbook_id UUID NOT NULL REFERENCES addressbooks(id),
     first_name VARCHAR,
     last_name VARCHAR,
     middle_name VARCHAR,
@@ -47,8 +47,8 @@ CREATE TABLE contacts (
 
 CREATE TABLE contact_tags (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    contact_id UUID NOT NULL REFERENCES id ON contacts,
-    tag_id UUID NOT NULL REFERENCES id ON addressbook_tags
+    contact_id UUID NOT NULL REFERENCES contacts(id),
+    tag_id UUID NOT NULL REFERENCES addressbook_tags(id)
 );
 
 CREATE TABLE organizations (
@@ -60,54 +60,54 @@ CREATE TABLE organizations (
 
 CREATE TABLE organization_tags (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    organization_id UUID NOT NULL REFERENCES id ON organizations,
-    tag_id UUID NOT NULL REFERENCES id ON addressbook_tags
+    organization_id UUID NOT NULL REFERENCES organizations(id),
+    tag_id UUID NOT NULL REFERENCES addressbook_tags(id)
 );
 
 CREATE TABLE organization_contacts (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     organization_id UUID NOT NULL,
-    contact_id UUID NOT NULL
+    contact_id UUID NOT NULL,
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE organization_phones (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    organization_id UUID NOT NULL REFERENCES id ON organizations
-    phone_id UUID NOT NULL rREFERENCES id ON phone_numbers
+    organization_id UUID NOT NULL REFERENCES organizations(id),
+    phone_id UUID NOT NULL REFERENCES phone_numbers(id)
 );
 
 CREATE TABLE organization_emails (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    organization_id UUID NOT NULL REFERENCES id ON organizations,
-    email_id UUID NOT NULL REFERENCES id ON email_addresses
+    organization_id UUID NOT NULL REFERENCES organizations(id),
+    email_id UUID NOT NULL REFERENCES email_addresses(id)
 );
 
 CREATE TABLE organization_addresses (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    organization_id UUID NOT NULL REFERENCES id ON organizations,
-    address_is UUID NOT NULL REFERENCES id ON physical_addresses
+    organization_id UUID NOT NULL REFERENCES organizations(id),
+    address_is UUID NOT NULL REFERENCES physical_addresses(id)
 );
 
 CREATE TABLE contact_phones (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    contact_id UUID NOT NULL REFERENCES id ON contacts,
-    phone_id UUID NOT NULL REFERENCES id ON phone_numbers,
+    contact_id UUID NOT NULL REFERENCES contacts(id),
+    phone_id UUID NOT NULL REFERENCES phone_numbers(id),
     phone_type VARCHAR,
     created_at TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE contact_addresses (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    contact_id UUID NOT NULL REFERENCES id ON contacts,
-    address_id UUID NOT NULL REFERENCES id ON physical_addresses,
+    contact_id UUID NOT NULL REFERENCES contacts(id),
+    address_id UUID NOT NULL REFERENCES physical_addresses(id),
     address_type VARCHAR
 );
 
 CREATE TABLE contact_emails (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    contact_id UUID NOT NULL REFERENCES id ON contacts,
-    email_id UUID NOT NULL REFERENCES id ON email_addresses,
+    contact_id UUID NOT NULL REFERENCES contacts(id),
+    email_id UUID NOT NULL REFERENCES email_addresses(id),
     email_type VARCHAR NOT NULL
 );
 

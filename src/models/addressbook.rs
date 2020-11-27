@@ -1,6 +1,6 @@
-use radmin::uuid::Uuid;
 use radmin::cli_table::Cell;
-use serde::{Serialize, Deserialize};
+use radmin::uuid::Uuid;
+use serde::{Deserialize, Serialize};
 
 use crate::schema::addressbooks;
 
@@ -9,7 +9,7 @@ use crate::schema::addressbooks;
 pub struct AddressBook {
     pub id: Uuid,
     pub account_id: Uuid,
-    pub name: String
+    pub name: String,
 }
 
 impl Into<Vec<Cell>> for AddressBook {

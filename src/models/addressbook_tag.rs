@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::addressbook_tags;
 
@@ -8,5 +8,5 @@ use crate::schema::addressbook_tags;
 pub struct AddressBookTag {
     pub id: Uuid,
     pub addressbook_id: Uuid,
-    pub label: String
+    pub label: String,
 }

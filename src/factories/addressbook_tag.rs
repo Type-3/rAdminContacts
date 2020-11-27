@@ -1,9 +1,9 @@
-use fake::Fake;
-use radmin::uuid::Uuid;
 use diesel::RunQueryDsl;
 use fake::faker::name::en::Name;
+use fake::Fake;
 use radmin::diesel::PgConnection;
 use radmin::serde::{Deserialize, Serialize};
+use radmin::uuid::Uuid;
 
 use crate::models::AddressBookTag;
 use crate::schema::addressbook_tags;
@@ -16,12 +16,10 @@ pub struct AddressBookTagFactory {
 }
 
 impl AddressBookTagFactory {
-
-
     pub fn new(addressbook_id: Uuid) -> AddressBookTagFactory {
         AddressBookTagFactory {
             addressbook_id,
-            label: Name().fake()
+            label: Name().fake(),
         }
     }
 

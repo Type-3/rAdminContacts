@@ -6,7 +6,7 @@ use crate::schema::organizations;
 #[derive(Debug, PartialEq, Clone, Default, Insertable)]
 #[table_name = "organizations"]
 pub struct OrganizationInfoFactory {
-    pub name: String
+    pub name: String,
 }
 
 impl OrganizationInfoFactory {

@@ -13,9 +13,9 @@ pub use self::email::ContactEmail;
 mod tag;
 pub use self::tag::ContactTag;
 
-use radmin::ServerError;
+use diesel::{BelongingToDsl, PgConnection, QueryDsl, RunQueryDsl};
 use radmin::uuid::Uuid;
-use diesel::{PgConnection, RunQueryDsl, QueryDsl, BelongingToDsl};
+use radmin::ServerError;
 
 use crate::schema::contacts;
 
@@ -28,17 +28,14 @@ pub struct ContactRecord {
 }
 
 impl ContactRecord {
-
     pub fn from_id(id: Uuid, conn: &PgConnection) -> Result<ContactRecord, ServerError> {
         let contact: ContactInfo = contacts::table.find(id).first(conn)?;
-        Ok(
-            ContactRecord {
-                emails: ContactEmail::belonging_to(&contact).load(conn)?,
-                tags: ContactTag::belonging_to(&contact).load(conn)?,
-                phones: ContactPhone::belonging_to(&contact).load(conn)?,
-                addresses: ContactAddress::belonging_to(&contact).load(conn)?,
-                contact
-            }
-        )
+        Ok(ContactRecord {
+            emails: ContactEmail::belonging_to(&contact).load(conn)?,
+            tags: ContactTag::belonging_to(&contact).load(conn)?,
+            phones: ContactPhone::belonging_to(&contact).load(conn)?,
+            addresses: ContactAddress::belonging_to(&contact).load(conn)?,
+            contact,
+        })
     }
 }

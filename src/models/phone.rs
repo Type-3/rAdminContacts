@@ -1,5 +1,5 @@
 use radmin::uuid::Uuid;
-use serde::{Serialize, Deserialize};
+use serde::{Deserialize, Serialize};
 
 use crate::schema::phone_numbers;
 
@@ -8,5 +8,5 @@ use crate::schema::phone_numbers;
 pub struct Phone {
     pub id: Uuid,
     pub phone: String,
-    pub extension: String
+    pub extension: String,
 }
